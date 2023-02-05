@@ -28,7 +28,6 @@ func CreateBook(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"book": book,
 	})
-	return
 }
 
 // read
@@ -46,7 +45,6 @@ func ReadBook(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"book": book,
 	})
-	return
 }
 
 func ReadBooks(c *gin.Context) {
@@ -61,7 +59,6 @@ func ReadBooks(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"books": books,
 	})
-	return
 }
 
 // update
@@ -89,7 +86,6 @@ func UpdateBook(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"book": book,
 	})
-	return
 }
 
 // delete
@@ -107,5 +103,4 @@ func DeleteBook(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"message": "book deleted successfully",
 	})
-	return
 }
